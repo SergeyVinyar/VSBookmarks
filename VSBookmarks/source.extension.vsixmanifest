@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="VSBookmarks..5e62ab98-1ca3-4f43-8c0d-6c73c1ee52e2" Version="1.0" Language="en-US" Publisher="Sergey Vinyarsky" />
+    <DisplayName>VSBookmarks</DisplayName>
+    <Description xml:space="preserve">Numeric bookmarks extension for Visual Studio.
+Provides up to nine enumerated bookmarks for every text editor tab. All the bookmarks are accessible by shortcuts or via a context menu.</Description>
+    <MoreInfo>https://github.com/SergeyVinyar/VSBookmarks</MoreInfo>
+    <License>LICENSE.txt</License>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="12.0" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="4.5" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+  </Assets>
+</PackageManifest>

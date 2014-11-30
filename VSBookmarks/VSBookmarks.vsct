@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- 
+    Bookmark 0 is excluded because Ctrl+0 is widely used shortcut in VS
+  -->
+
+  <Extern href="stdidcmd.h" />
+  <Extern href="vsshlids.h" />
+
+  <Commands>
+    <Menus>
+      <!-- Root submenu -->
+      <Menu guid="guidVSBookmarksCmdSet" id="SubMenu" priority="0x0100" type="Context">
+        <Parent guid="guidVSBookmarksCmdSet" id="MyMenuGroup" />
+        <Strings>
+          <CommandName>VSBookmarks</CommandName>
+          <ButtonText>VSBookmarks</ButtonText>
+        </Strings>
+      </Menu>
+
+      <!-- Set submenu -->
+      <Menu guid="guidVSBookmarksCmdSet" id="SetSubMenu" priority="0x0110">
+        <Parent guid="guidVSBookmarksCmdSet" id="SetSubMenuGroup" />
+        <Strings>
+          <CommandName>SetBookmark</CommandName>
+          <ButtonText>Set bookmark</ButtonText>
+        </Strings>
+      </Menu>
+
+      <!-- Goto submenu -->
+      <Menu guid="guidVSBookmarksCmdSet" id="GotoSubMenu" priority="0x0120">
+        <Parent guid="guidVSBookmarksCmdSet" id="GotoSubMenuGroup" />
+        <Strings>
+          <CommandName>GotoBookmark</CommandName>
+          <ButtonText>Goto bookmark</ButtonText>
+        </Strings>
+      </Menu>
+    </Menus>
+
+    <Groups>
+      <!-- Root group -->
+      <Group guid="guidVSBookmarksCmdSet" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN"/>
+      </Group>
+
+      <!-- Set group -->
+      <Group guid="guidVSBookmarksCmdSet" id="SetSubMenuGroup" priority="0x0610">
+        <Parent guid="guidVSBookmarksCmdSet" id="SubMenu" />
+      </Group>
+
+      <!-- Goto group -->
+      <Group guid="guidVSBookmarksCmdSet" id="GotoSubMenuGroup" priority="0x0620">
+        <Parent guid="guidVSBookmarksCmdSet" id="SubMenu" />
+      </Group>
+    </Groups>
+
+    <Buttons>
+      <!-- set buttons -->
+      <!-- 
+      <Button guid="guidVSBookmarksCmdSet" id="SetBookmark0" priority="0x0000" type="Button">
+        <Parent guid="guidVSBookmarksCmdSet" id="SetSubMenuGroup" />
+        <Strings>
+          <CommandName>SetBookmark0</CommandName>
+          <ButtonText>Set bookmark 0</ButtonText>
+        </Strings>
+      </Button>
+      -->
+      <Button guid="guidVSBookmarksCmdSet" id="SetBookmark1" priority="0x0010" type="Button">
+        <Parent guid="guidVSBookmarksCmdSet" id="SetSubMenuGroup" />
+        <Strings>
+          <CommandName>SetBookmark1</CommandName>
+          <ButtonText>Set bookmark 1</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidVSBookmarksCmdSet" id="SetBookmark2" priority="0x0020" type="Button">
+        <Parent guid="guidVSBookmarksCmdSet" id="SetSubMenuGroup" />
+        <Strings>
+          <CommandName>SetBookmark2</CommandName>
+          <ButtonText>Set bookmark 2</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidVSBookmarksCmdSet" id="SetBookmark3" priority="0x0030" type="Button">
+        <Parent guid="guidVSBookmarksCmdSet" id="SetSubMenuGroup" />
+        <Strings>
+          <CommandName>SetBookmark3</CommandName>
+          <ButtonText>Set bookmark 3</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidVSBookmarksCmdSet" id="SetBookmark4" priority="0x0040" type="Button">
+        <Parent guid="guidVSBookmarksCmdSet" id="SetSubMenuGroup" />
+        <Strings>
+          <CommandName>SetBookmark4</CommandName>
+          <ButtonText>Set bookmark 4</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidVSBookmarksCmdSet" id="SetBookmark5" priority="0x0050" type="Button">
+        <Parent guid="guidVSBookmarksCmdSet" id="SetSubMenuGroup" />
+        <Strings>
+          <CommandName>SetBookmark5</CommandName>
+          <ButtonText>Set bookmark 5</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidVSBookmarksCmdSet" id="SetBookmark6" priority="0x0060" type="Button">
+        <Parent guid="guidVSBookmarksCmdSet" id="SetSubMenuGroup" />
+        <Strings>
+          <CommandName>SetBookmark6</CommandName>
+          <ButtonText>Set bookmark 6</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidVSBookmarksCmdSet" id="SetBookmark7" priority="0x0070" type="Button">
+        <Parent guid="guidVSBookmarksCmdSet" id="SetSubMenuGroup" />
+        <Strings>
+          <CommandName>SetBookmark7</CommandName>
+          <ButtonText>Set bookmark 7</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidVSBookmarksCmdSet" id="SetBookmark8" priority="0x0080" type="Button">
+        <Parent guid="guidVSBookmarksCmdSet" id="SetSubMenuGroup" />
+        <Strings>
+          <CommandName>SetBookmark8</CommandName>
+          <ButtonText>Set bookmark 8</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidVSBookmarksCmdSet" id="SetBookmark9" priority="0x0090" type="Button">
+        <Parent guid="guidVSBookmarksCmdSet" id="SetSubMenuGroup" />
+        <Strings>
+          <CommandName>SetBookmark9</CommandName>
+          <ButtonText>Set bookmark 9</ButtonText>
+        </Strings>
+      </Button>
+    
+      <!-- goto buttons -->
+      <!--
+      <Button guid="guidVSBookmarksCmdSet" id="GotoBookmark0" priority="0x00A0" type="Button">
+        <Parent guid="guidVSBookmarksCmdSet" id="GotoSubMenuGroup" />
+        <Strings>
+          <CommandName>GotoBookmark0</CommandName>
+          <ButtonText>Goto bookmark 0</ButtonText>
+        </Strings>
+      </Button>
+      -->
+      <Button guid="guidVSBookmarksCmdSet" id="GotoBookmark1" priority="0x00A5" type="Button">
+        <Parent guid="guidVSBookmarksCmdSet" id="GotoSubMenuGroup" />
+        <Strings>
+          <CommandName>GotoBookmark1</CommandName>
+          <ButtonText>Goto bookmark 1</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidVSBookmarksCmdSet" id="GotoBookmark2" priority="0x00B0" type="Button">
+        <Parent guid="guidVSBookmarksCmdSet" id="GotoSubMenuGroup" />
+        <Strings>
+          <CommandName>GotoBookmark2</CommandName>
+          <ButtonText>Goto bookmark 2</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidVSBookmarksCmdSet" id="GotoBookmark3" priority="0x00C0" type="Button">
+        <Parent guid="guidVSBookmarksCmdSet" id="GotoSubMenuGroup" />
+        <Strings>
+          <CommandName>GotoBookmark3</CommandName>
+          <ButtonText>Goto bookmark 3</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidVSBookmarksCmdSet" id="GotoBookmark4" priority="0x00D0" type="Button">
+        <Parent guid="guidVSBookmarksCmdSet" id="GotoSubMenuGroup" />
+        <Strings>
+          <CommandName>GotoBookmark4</CommandName>
+          <ButtonText>Goto bookmark 4</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidVSBookmarksCmdSet" id="GotoBookmark5" priority="0x00E0" type="Button">
+        <Parent guid="guidVSBookmarksCmdSet" id="GotoSubMenuGroup" />
+        <Strings>
+          <CommandName>GotoBookmark5</CommandName>
+          <ButtonText>Goto bookmark 5</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidVSBookmarksCmdSet" id="GotoBookmark6" priority="0x0100" type="Button">
+        <Parent guid="guidVSBookmarksCmdSet" id="GotoSubMenuGroup" />
+        <Strings>
+          <CommandName>GotoBookmark6</CommandName>
+          <ButtonText>Goto bookmark 6</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidVSBookmarksCmdSet" id="GotoBookmark7" priority="0x0110" type="Button">
+        <Parent guid="guidVSBookmarksCmdSet" id="GotoSubMenuGroup" />
+        <Strings>
+          <CommandName>GotoBookmark7</CommandName>
+          <ButtonText>Goto bookmark 7</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidVSBookmarksCmdSet" id="GotoBookmark8" priority="0x0120" type="Button">
+        <Parent guid="guidVSBookmarksCmdSet" id="GotoSubMenuGroup" />
+        <Strings>
+          <CommandName>GotoBookmark8</CommandName>
+          <ButtonText>Goto bookmark 8</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidVSBookmarksCmdSet" id="GotoBookmark9" priority="0x0130" type="Button">
+        <Parent guid="guidVSBookmarksCmdSet" id="GotoSubMenuGroup" />
+        <Strings>
+          <CommandName>GotoBookmark9</CommandName>
+          <ButtonText>Goto bookmark 9</ButtonText>
+        </Strings>
+      </Button>
+  
+    </Buttons>
+  </Commands>
+
+  <KeyBindings>
+    <!--
+    <KeyBinding guid="guidVSBookmarksCmdSet" id="SetBookmark0" editor="guidVSStd97" key1="0" mod1="Control Shift" />
+    -->
+    <KeyBinding guid="guidVSBookmarksCmdSet" id="SetBookmark1" editor="guidVSStd97" key1="1" mod1="Control Shift" />
+    <KeyBinding guid="guidVSBookmarksCmdSet" id="SetBookmark2" editor="guidVSStd97" key1="2" mod1="Control Shift" />
+    <KeyBinding guid="guidVSBookmarksCmdSet" id="SetBookmark3" editor="guidVSStd97" key1="3" mod1="Control Shift" />
+    <KeyBinding guid="guidVSBookmarksCmdSet" id="SetBookmark4" editor="guidVSStd97" key1="4" mod1="Control Shift" />
+    <KeyBinding guid="guidVSBookmarksCmdSet" id="SetBookmark5" editor="guidVSStd97" key1="5" mod1="Control Shift" />
+    <KeyBinding guid="guidVSBookmarksCmdSet" id="SetBookmark6" editor="guidVSStd97" key1="6" mod1="Control Shift" />
+    <KeyBinding guid="guidVSBookmarksCmdSet" id="SetBookmark7" editor="guidVSStd97" key1="7" mod1="Control Shift" />
+    <KeyBinding guid="guidVSBookmarksCmdSet" id="SetBookmark8" editor="guidVSStd97" key1="8" mod1="Control Shift" />
+    <KeyBinding guid="guidVSBookmarksCmdSet" id="SetBookmark9" editor="guidVSStd97" key1="9" mod1="Control Shift" />  
+  
+    <!--
+    <KeyBinding guid="guidVSBookmarksCmdSet" id="GotoBookmark0" editor="guidVSStd97" key1="0" mod1="Control" />
+    -->
+    <KeyBinding guid="guidVSBookmarksCmdSet" id="GotoBookmark1" editor="guidVSStd97" key1="1" mod1="Control" />
+    <KeyBinding guid="guidVSBookmarksCmdSet" id="GotoBookmark2" editor="guidVSStd97" key1="2" mod1="Control" />
+    <KeyBinding guid="guidVSBookmarksCmdSet" id="GotoBookmark3" editor="guidVSStd97" key1="3" mod1="Control" />
+    <KeyBinding guid="guidVSBookmarksCmdSet" id="GotoBookmark4" editor="guidVSStd97" key1="4" mod1="Control" />
+    <KeyBinding guid="guidVSBookmarksCmdSet" id="GotoBookmark5" editor="guidVSStd97" key1="5" mod1="Control" />
+    <KeyBinding guid="guidVSBookmarksCmdSet" id="GotoBookmark6" editor="guidVSStd97" key1="6" mod1="Control" />
+    <KeyBinding guid="guidVSBookmarksCmdSet" id="GotoBookmark7" editor="guidVSStd97" key1="7" mod1="Control" />
+    <KeyBinding guid="guidVSBookmarksCmdSet" id="GotoBookmark8" editor="guidVSStd97" key1="8" mod1="Control" />
+    <KeyBinding guid="guidVSBookmarksCmdSet" id="GotoBookmark9" editor="guidVSStd97" key1="9" mod1="Control" />  
+  </KeyBindings>
+
+  <Symbols>
+    <GuidSymbol name="guidVSBookmarksPkg" value="{406FEC6A-89A5-44EA-BF41-70A61ADF90B6}" />
+    <GuidSymbol name="guidVSBookmarksCmdSet" value="{34CE31E6-F674-46D1-94CD-E24963677290}">
+      <IDSymbol name="MyMenuGroup" value="0x1020" />
+      <IDSymbol name="SetSubMenuGroup" value="0x1030" />
+      <IDSymbol name="GotoSubMenuGroup" value="0x1040" />
+      <IDSymbol name="SubMenu" value="0x1100" />
+      <IDSymbol name="SetSubMenu" value="0x1110" />
+      <IDSymbol name="GotoSubMenu" value="0x1120" />
+      <!--
+      <IDSymbol name="SetBookmark0" value="0x0000" />
+      -->
+      <IDSymbol name="SetBookmark1" value="0x0001" />
+      <IDSymbol name="SetBookmark2" value="0x0002" />
+      <IDSymbol name="SetBookmark3" value="0x0003" />
+      <IDSymbol name="SetBookmark4" value="0x0004" />
+      <IDSymbol name="SetBookmark5" value="0x0005" />
+      <IDSymbol name="SetBookmark6" value="0x0006" />
+      <IDSymbol name="SetBookmark7" value="0x0007" />
+      <IDSymbol name="SetBookmark8" value="0x0008" />
+      <IDSymbol name="SetBookmark9" value="0x0009" />
+      <!--
+      <IDSymbol name="GotoBookmark0" value="0x000A" />
+      -->
+      <IDSymbol name="GotoBookmark1" value="0x000B" />
+      <IDSymbol name="GotoBookmark2" value="0x000C" />
+      <IDSymbol name="GotoBookmark3" value="0x000D" />
+      <IDSymbol name="GotoBookmark4" value="0x000E" />
+      <IDSymbol name="GotoBookmark5" value="0x000F" />
+      <IDSymbol name="GotoBookmark6" value="0x0010" />
+      <IDSymbol name="GotoBookmark7" value="0x0011" />
+      <IDSymbol name="GotoBookmark8" value="0x0012" />
+      <IDSymbol name="GotoBookmark9" value="0x0013" />    
+    </GuidSymbol>
+  </Symbols>
+  
+</CommandTable>
