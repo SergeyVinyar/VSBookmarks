@@ -9,7 +9,7 @@ Provides up to nine enumerated bookmarks for every text editor tab. All the book
 
 *Please note,* Visual Studio blocks reassigning shortcuts automatically. It means you have to assign some of shortcuts by hand using Tools -> Customize. Click “Keyboard…” and type in a filter “VSBookmarks” (without quotes) and assign shortcuts for commands is the list below.
 
-*Nowadays VSNumeric supports Visual Studio 2013 only.*
+*Nowadays VSBookmark supports Visual Studio 2013 only.*
 
 ##Todo's
 * Bookmark columns (not just rows)
