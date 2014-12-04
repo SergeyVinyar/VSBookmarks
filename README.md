@@ -2,6 +2,8 @@
 
 **VSBookmarks is a numeric bookmarks extension for Visual Studio.**
 
+<img style="float: left; margin-right: 20px" src="https://raw.github.com/SergeyVinyar/VSBookmarks/master/README_img/screenshot.png">
+
 Provides up to nine enumerated bookmarks for every text editor tab. All the bookmarks are accessible by shortcuts or via a context menu (see for VSBookmarks submenu).
 
 * **Ctrl-shift-[1..9]** to set, change or remove a bookmark (you will see an appropriate digit on the left margin of the editor area).
