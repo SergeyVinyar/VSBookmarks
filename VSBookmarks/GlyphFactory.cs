@@ -9,6 +9,7 @@ using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.Text.Formatting;
 using Microsoft.VisualStudio.Text.Tagging;
 using Microsoft.VisualStudio.Utilities;
+using Microsoft.VisualStudio.PlatformUI;
 
 namespace VSBookmarks {
 
@@ -28,8 +29,18 @@ namespace VSBookmarks {
       digit.VerticalAlignment = VerticalAlignment.Center;
       digit.Width = _GlyphSize;
       digit.Height = _GlyphSize;
+      digit.Foreground = new SolidColorBrush(GetCurrentThemeColor());
+
+      VSColorTheme.ThemeChanged += (e) => {
+        digit.Foreground = new SolidColorBrush(GetCurrentThemeColor());
+      };
 
       return digit;
+    }
+
+    private Color GetCurrentThemeColor() {
+      var drawingColor = VSColorTheme.GetThemedColor(EnvironmentColors.CommandBarTextActiveColorKey);
+      return Color.FromArgb(drawingColor.A, drawingColor.R, drawingColor.G, drawingColor.B);
     }
 
     const double _GlyphSize = 14.0;

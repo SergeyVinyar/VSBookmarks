@@ -86,8 +86,9 @@ namespace VSBookmarks {
 
       var row = _Bookmarks[number].GetRow(_Buffer);
       TextSelection selection = _DTE2.ActiveDocument.Selection;
+      int column = selection.ActivePoint.DisplayColumn;
       selection.StartOfDocument();
-      selection.MoveToLineAndOffset(row, 1);
+      selection.MoveToLineAndOffset(row, column);
                                             
       return _Bookmarks[number];
     }
