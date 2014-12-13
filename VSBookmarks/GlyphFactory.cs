@@ -1,19 +1,13 @@
-﻿using System;
-using System.ComponentModel.Composition;
-using System.Windows;
-using System.Windows.Shapes;
+﻿using System.Windows;
 using System.Windows.Media;
 using System.Windows.Controls;
-using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.Text.Formatting;
-using Microsoft.VisualStudio.Text.Tagging;
-using Microsoft.VisualStudio.Utilities;
 using Microsoft.VisualStudio.PlatformUI;
 
 namespace VSBookmarks {
 
-  internal class GlyphFactory: IGlyphFactory {
+  class GlyphFactory: IGlyphFactory {
 
     public UIElement GenerateGlyph(IWpfTextViewLine line, IGlyphTag tag) {
       if(tag == null || !(tag is Tag)) {
@@ -44,19 +38,6 @@ namespace VSBookmarks {
     }
 
     const double _GlyphSize = 14.0;
-  }
-
-  [Export(typeof(IGlyphFactoryProvider))]
-  [Name("VSBookmarks")]
-  [Order(After = "VsTextMarker")]
-  [ContentType("code")]
-  [TagType(typeof(Tag))]
-  internal sealed class GlyphFactoryProvider: IGlyphFactoryProvider {
-
-    public IGlyphFactory GetGlyphFactory(IWpfTextView view, IWpfTextViewMargin margin) {
-      return new GlyphFactory();
-    }
-
   }
 
 }

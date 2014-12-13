@@ -4,17 +4,14 @@
 
 <img style="float: left; margin-right: 20px" src="https://raw.github.com/SergeyVinyar/VSBookmarks/master/README_img/screenshot.png">
 
-Provides up to nine enumerated bookmarks for every text editor tab. All the bookmarks are accessible by shortcuts or via a context menu (see for VSBookmarks submenu).
+Provides up to nine enumerated bookmarks for every text editor tab. All of them are accessible by shortcuts:
 
-* **Ctrl-shift-[1..9]** to set, change or remove a bookmark (you will see an appropriate digit on the left margin of the editor area).
-* **Ctrl-[1..9]** are used to go to a previously set bookmark.
+* **Ctrl-Shift-[1..9]** - set, change or remove a bookmark (you will see an appropriate digit on the left margin of the editor area);
+* **Ctrl-[1..9]** - go to a previously set bookmark.
 
-*Please note,* Visual Studio blocks reassigning shortcuts automatically. It means you have to assign some of shortcuts by hand using Tools -> Customize. Click “Keyboard…” and type in a filter “VSBookmarks” (without quotes) and assign shortcuts for commands is the list below.
-
-*Nowadays VSBookmarks supports Visual Studio 2013 only.*
+If some of these shortcuts don't work you need to free them via Tools -> Customize -> <Keyboard...> button.
+In most cases no additional actions are required.
 
 ##Todo's
 * Bookmark columns (not just rows)
-* Add dark theme support
-* Exclude some constants to a separate file
 * Build for Visual Studio 2012 (and 2010?)

@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-  <!-- 
-    Bookmark 0 is excluded because Ctrl+0 is widely used shortcut in VS
-  -->
+<!--
+
+  We don't need commands anymore - keybinding is implemented via IKeyProcessorProvider
 
   <Extern href="stdidcmd.h" />
   <Extern href="vsshlids.h" />
 
   <Commands>
+
     <Menus>
-      <!-- Root submenu -->
       <Menu guid="guidVSBookmarksCmdSet" id="SubMenu" priority="0x0100" type="Context">
         <Parent guid="guidVSBookmarksCmdSet" id="MyMenuGroup" />
         <Strings>
@@ -19,7 +19,6 @@
         </Strings>
       </Menu>
 
-      <!-- Set submenu -->
       <Menu guid="guidVSBookmarksCmdSet" id="SetSubMenu" priority="0x0110">
         <Parent guid="guidVSBookmarksCmdSet" id="SetSubMenuGroup" />
         <Strings>
@@ -28,7 +27,6 @@
         </Strings>
       </Menu>
 
-      <!-- Goto submenu -->
       <Menu guid="guidVSBookmarksCmdSet" id="GotoSubMenu" priority="0x0120">
         <Parent guid="guidVSBookmarksCmdSet" id="GotoSubMenuGroup" />
         <Strings>
@@ -39,33 +37,20 @@
     </Menus>
 
     <Groups>
-      <!-- Root group -->
       <Group guid="guidVSBookmarksCmdSet" id="MyMenuGroup" priority="0x0600">
         <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN"/>
       </Group>
 
-      <!-- Set group -->
       <Group guid="guidVSBookmarksCmdSet" id="SetSubMenuGroup" priority="0x0610">
         <Parent guid="guidVSBookmarksCmdSet" id="SubMenu" />
       </Group>
 
-      <!-- Goto group -->
       <Group guid="guidVSBookmarksCmdSet" id="GotoSubMenuGroup" priority="0x0620">
         <Parent guid="guidVSBookmarksCmdSet" id="SubMenu" />
       </Group>
     </Groups>
 
     <Buttons>
-      <!-- set buttons -->
-      <!-- 
-      <Button guid="guidVSBookmarksCmdSet" id="SetBookmark0" priority="0x0000" type="Button">
-        <Parent guid="guidVSBookmarksCmdSet" id="SetSubMenuGroup" />
-        <Strings>
-          <CommandName>SetBookmark0</CommandName>
-          <ButtonText>Set bookmark 0</ButtonText>
-        </Strings>
-      </Button>
-      -->
       <Button guid="guidVSBookmarksCmdSet" id="SetBookmark1" priority="0x0010" type="Button">
         <Parent guid="guidVSBookmarksCmdSet" id="SetSubMenuGroup" />
         <Strings>
@@ -130,16 +115,6 @@
         </Strings>
       </Button>
     
-      <!-- goto buttons -->
-      <!--
-      <Button guid="guidVSBookmarksCmdSet" id="GotoBookmark0" priority="0x00A0" type="Button">
-        <Parent guid="guidVSBookmarksCmdSet" id="GotoSubMenuGroup" />
-        <Strings>
-          <CommandName>GotoBookmark0</CommandName>
-          <ButtonText>Goto bookmark 0</ButtonText>
-        </Strings>
-      </Button>
-      -->
       <Button guid="guidVSBookmarksCmdSet" id="GotoBookmark1" priority="0x00A5" type="Button">
         <Parent guid="guidVSBookmarksCmdSet" id="GotoSubMenuGroup" />
         <Strings>
@@ -208,9 +183,6 @@
   </Commands>
 
   <KeyBindings>
-    <!--
-    <KeyBinding guid="guidVSBookmarksCmdSet" id="SetBookmark0" editor="guidVSStd97" key1="0" mod1="Control Shift" />
-    -->
     <KeyBinding guid="guidVSBookmarksCmdSet" id="SetBookmark1" editor="guidVSStd97" key1="1" mod1="Control Shift" />
     <KeyBinding guid="guidVSBookmarksCmdSet" id="SetBookmark2" editor="guidVSStd97" key1="2" mod1="Control Shift" />
     <KeyBinding guid="guidVSBookmarksCmdSet" id="SetBookmark3" editor="guidVSStd97" key1="3" mod1="Control Shift" />
@@ -221,9 +193,6 @@
     <KeyBinding guid="guidVSBookmarksCmdSet" id="SetBookmark8" editor="guidVSStd97" key1="8" mod1="Control Shift" />
     <KeyBinding guid="guidVSBookmarksCmdSet" id="SetBookmark9" editor="guidVSStd97" key1="9" mod1="Control Shift" />  
   
-    <!--
-    <KeyBinding guid="guidVSBookmarksCmdSet" id="GotoBookmark0" editor="guidVSStd97" key1="0" mod1="Control" />
-    -->
     <KeyBinding guid="guidVSBookmarksCmdSet" id="GotoBookmark1" editor="guidVSStd97" key1="1" mod1="Control" />
     <KeyBinding guid="guidVSBookmarksCmdSet" id="GotoBookmark2" editor="guidVSStd97" key1="2" mod1="Control" />
     <KeyBinding guid="guidVSBookmarksCmdSet" id="GotoBookmark3" editor="guidVSStd97" key1="3" mod1="Control" />
@@ -244,9 +213,6 @@
       <IDSymbol name="SubMenu" value="0x1100" />
       <IDSymbol name="SetSubMenu" value="0x1110" />
       <IDSymbol name="GotoSubMenu" value="0x1120" />
-      <!--
-      <IDSymbol name="SetBookmark0" value="0x0000" />
-      -->
       <IDSymbol name="SetBookmark1" value="0x0001" />
       <IDSymbol name="SetBookmark2" value="0x0002" />
       <IDSymbol name="SetBookmark3" value="0x0003" />
@@ -256,9 +222,6 @@
       <IDSymbol name="SetBookmark7" value="0x0007" />
       <IDSymbol name="SetBookmark8" value="0x0008" />
       <IDSymbol name="SetBookmark9" value="0x0009" />
-      <!--
-      <IDSymbol name="GotoBookmark0" value="0x000A" />
-      -->
       <IDSymbol name="GotoBookmark1" value="0x000B" />
       <IDSymbol name="GotoBookmark2" value="0x000C" />
       <IDSymbol name="GotoBookmark3" value="0x000D" />
@@ -270,5 +233,7 @@
       <IDSymbol name="GotoBookmark9" value="0x0013" />    
     </GuidSymbol>
   </Symbols>
+  
+-->  
   
 </CommandTable>

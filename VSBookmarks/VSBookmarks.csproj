@@ -83,13 +83,16 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xaml" />
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GlyphFactory.cs" />
-    <Compile Include="KeyFilter.cs" />
+    <Compile Include="GlyphFactoryProvider.cs" />
+    <Compile Include="KeyProcessor.cs" />
+    <Compile Include="KeyProcessorProvider.cs" />
     <Compile Include="Manager.cs" />
     <Compile Include="Package.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -24,7 +24,6 @@ namespace VSBookmarks {
         throw new ArgumentNullException("buffer");
                                                                  
       var manager = textView.Properties.GetOrCreateSingletonProperty<Manager>(() => new Manager(buffer));
-      new KeyFilter(textView, manager).AddKeyFilter(editorFactory);
       return manager.Tagger as ITagger<T>;
     }
 
