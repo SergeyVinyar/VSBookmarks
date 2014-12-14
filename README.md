@@ -10,9 +10,9 @@ Provides up to nine enumerated bookmarks for every text editor tab. All of them 
 * **Ctrl-[1..9]** - go to a previously set bookmark.
 
 If some of these shortcuts are already used by any other global commands VSBookmark won't be able to hook them. In this case the following wiil help:
-1. go to Tools -> Customize -> <Keyboard...> button;
-2. type in a filter “VSBookmarks” (without quotes);
-3. choose a command that relates to unavailable shortcut;
-4. assign a shortcut.
+* go to Tools -> Customize -> <Keyboard...> button;
+* type in a filter â€œVSBookmarksâ€ (without quotes);
+* choose a command that relates to unavailable shortcut;
+* assign a shortcut.
 
 If you use Visual Studio with default settings no additional actions are required.
