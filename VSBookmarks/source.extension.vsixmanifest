@@ -7,6 +7,7 @@
 Provides up to nine enumerated bookmarks for every text editor tab. All the bookmarks are accessible by shortcuts or via a context menu.</Description>
     <MoreInfo>https://github.com/SergeyVinyar/VSBookmarks</MoreInfo>
     <License>LICENSE.txt</License>
+    <PreviewImage>preview.png</PreviewImage>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="12.0" />

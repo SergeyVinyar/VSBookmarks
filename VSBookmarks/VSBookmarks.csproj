@@ -89,6 +89,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommandFilter.cs" />
     <Compile Include="GlyphFactory.cs" />
     <Compile Include="GlyphFactoryProvider.cs" />
     <Compile Include="KeyProcessor.cs" />
@@ -118,6 +119,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="preview.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>

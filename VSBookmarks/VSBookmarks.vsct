@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-<!--
-
-  We don't need commands anymore - keybinding is implemented via IKeyProcessorProvider
-
   <Extern href="stdidcmd.h" />
   <Extern href="vsshlids.h" />
 
@@ -182,28 +178,6 @@
     </Buttons>
   </Commands>
 
-  <KeyBindings>
-    <KeyBinding guid="guidVSBookmarksCmdSet" id="SetBookmark1" editor="guidVSStd97" key1="1" mod1="Control Shift" />
-    <KeyBinding guid="guidVSBookmarksCmdSet" id="SetBookmark2" editor="guidVSStd97" key1="2" mod1="Control Shift" />
-    <KeyBinding guid="guidVSBookmarksCmdSet" id="SetBookmark3" editor="guidVSStd97" key1="3" mod1="Control Shift" />
-    <KeyBinding guid="guidVSBookmarksCmdSet" id="SetBookmark4" editor="guidVSStd97" key1="4" mod1="Control Shift" />
-    <KeyBinding guid="guidVSBookmarksCmdSet" id="SetBookmark5" editor="guidVSStd97" key1="5" mod1="Control Shift" />
-    <KeyBinding guid="guidVSBookmarksCmdSet" id="SetBookmark6" editor="guidVSStd97" key1="6" mod1="Control Shift" />
-    <KeyBinding guid="guidVSBookmarksCmdSet" id="SetBookmark7" editor="guidVSStd97" key1="7" mod1="Control Shift" />
-    <KeyBinding guid="guidVSBookmarksCmdSet" id="SetBookmark8" editor="guidVSStd97" key1="8" mod1="Control Shift" />
-    <KeyBinding guid="guidVSBookmarksCmdSet" id="SetBookmark9" editor="guidVSStd97" key1="9" mod1="Control Shift" />  
-  
-    <KeyBinding guid="guidVSBookmarksCmdSet" id="GotoBookmark1" editor="guidVSStd97" key1="1" mod1="Control" />
-    <KeyBinding guid="guidVSBookmarksCmdSet" id="GotoBookmark2" editor="guidVSStd97" key1="2" mod1="Control" />
-    <KeyBinding guid="guidVSBookmarksCmdSet" id="GotoBookmark3" editor="guidVSStd97" key1="3" mod1="Control" />
-    <KeyBinding guid="guidVSBookmarksCmdSet" id="GotoBookmark4" editor="guidVSStd97" key1="4" mod1="Control" />
-    <KeyBinding guid="guidVSBookmarksCmdSet" id="GotoBookmark5" editor="guidVSStd97" key1="5" mod1="Control" />
-    <KeyBinding guid="guidVSBookmarksCmdSet" id="GotoBookmark6" editor="guidVSStd97" key1="6" mod1="Control" />
-    <KeyBinding guid="guidVSBookmarksCmdSet" id="GotoBookmark7" editor="guidVSStd97" key1="7" mod1="Control" />
-    <KeyBinding guid="guidVSBookmarksCmdSet" id="GotoBookmark8" editor="guidVSStd97" key1="8" mod1="Control" />
-    <KeyBinding guid="guidVSBookmarksCmdSet" id="GotoBookmark9" editor="guidVSStd97" key1="9" mod1="Control" />  
-  </KeyBindings>
-
   <Symbols>
     <GuidSymbol name="guidVSBookmarksPkg" value="{406FEC6A-89A5-44EA-BF41-70A61ADF90B6}" />
     <GuidSymbol name="guidVSBookmarksCmdSet" value="{34CE31E6-F674-46D1-94CD-E24963677290}">
@@ -233,7 +207,5 @@
       <IDSymbol name="GotoBookmark9" value="0x0013" />    
     </GuidSymbol>
   </Symbols>
-  
--->  
   
 </CommandTable>
