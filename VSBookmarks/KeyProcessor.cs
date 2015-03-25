@@ -12,6 +12,10 @@ namespace VSBookmarks {
     public override void KeyDown(KeyEventArgs args) {
       if((Keyboard.Modifiers & ModifierKeys.Control) == 0)
         return;
+      // When pressing AltGr in german layout Windows automatically adds Ctrl
+      // (That's the way Windows distinguishes Alt and AltGr buttons)
+      if((Keyboard.Modifiers & ModifierKeys.Alt) != 0)
+        return;
 
       if(  args.Key == Key.D1
         || args.Key == Key.D2
