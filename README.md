@@ -16,3 +16,7 @@ If some of these shortcuts are already used by any other global commands VSBookm
 * assign a shortcut.
 
 If you use Visual Studio with default settings no additional actions are required.
+
+**Version history**
+
+1.2	Fixed: Can't type left curly bracket using german keyboard layout
