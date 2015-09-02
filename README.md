@@ -15,8 +15,8 @@ If some of these shortcuts are already used by any other global commands VSBookm
 * choose a command that relates to unavailable shortcut;
 * assign a shortcut.
 
-If you use Visual Studio with default settings no additional actions are required.
-
 **Version history**
 
 1.2	Fixed: Can't type left curly bracket using german keyboard layout
+
+1.3	Added: Visual Studio 2015 support
