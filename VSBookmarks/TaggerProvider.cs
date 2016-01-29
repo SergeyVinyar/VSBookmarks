@@ -13,7 +13,7 @@ using Microsoft.VisualStudio.TextManager.Interop;
 namespace VSBookmarks {
 
   [Export(typeof(IViewTaggerProvider))]
-  [ContentType("text")]
+  [ContentType("any")]
   [TagType(typeof(Tag))]
   class TodoTaggerProvider: IViewTaggerProvider {
 
@@ -22,8 +22,10 @@ namespace VSBookmarks {
         throw new ArgumentNullException("textView");
       if(buffer == null)
         throw new ArgumentNullException("buffer");
-                                                                 
-      var manager = textView.Properties.GetOrCreateSingletonProperty<Manager>(() => new Manager(buffer));
+
+      var manager = textView.Properties.GetOrCreateSingletonProperty<Manager>(() => new Manager());
+      manager.SetBuffer(textView.TextBuffer);
+
       new CommandFilter(textView, manager).AddKeyFilter(editorFactory);
       return manager.Tagger as ITagger<T>;
     }

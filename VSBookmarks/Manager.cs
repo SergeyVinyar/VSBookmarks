@@ -41,21 +41,27 @@ namespace VSBookmarks {
 
   internal class Manager {
 
-    public Manager(ITextBuffer buffer) {
-      if(buffer == null)
-        throw new ArgumentNullException("buffer");
-      _Buffer = buffer;
+    public Manager() {
       _DTE2 = Package.GetGlobalService(typeof(DTE)) as DTE2;
     }
 
     public SimpleTagger<Tag> Tagger {
       get {
+        if(_Buffer == null)
+          throw new Exception("_Buffer is not initialized");
         if(_Tagger == null)
           _Tagger = new SimpleTagger<Tag>(_Buffer);
         return _Tagger;
       } 
     }
     private SimpleTagger<Tag> _Tagger = null;
+
+    public void SetBuffer(ITextBuffer buffer) {
+      if(buffer == null)
+        throw new ArgumentNullException("buffer");
+      _Buffer = buffer;
+      _Tagger = null;
+    }
 
     public void SetBookmark(int number) {
       TextSelection selection = _DTE2.ActiveDocument.Selection;
@@ -75,7 +81,7 @@ namespace VSBookmarks {
       var snapshot = _Buffer.CurrentSnapshot;
       var line = snapshot.GetLineFromLineNumber(row - 1);
       var span = snapshot.CreateTrackingSpan(new SnapshotSpan(line.Start, 0), SpanTrackingMode.EdgeExclusive);
-      var tagTrackerSpan = _Tagger.CreateTagSpan(span, new Tag(number));
+      var tagTrackerSpan = Tagger.CreateTagSpan(span, new Tag(number));
       _Bookmarks[number] = new Bookmark(tagTrackerSpan);
     }
 
