@@ -6,7 +6,8 @@ namespace VSBookmarks {
   class BookmarkKeyProcessor: KeyProcessor {
                             
     public BookmarkKeyProcessor(ITextView textView) {
-      _Manager = textView.Properties.GetOrCreateSingletonProperty<Manager>(() => new Manager(textView.TextBuffer));
+      _Manager = textView.Properties.GetOrCreateSingletonProperty<Manager>(() => new Manager());
+      _Manager.SetBuffer(textView.TextBuffer);
     }
 
     public override void KeyDown(KeyEventArgs args) {

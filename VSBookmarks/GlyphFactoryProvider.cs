@@ -8,7 +8,7 @@ namespace VSBookmarks {
   [Export(typeof(IGlyphFactoryProvider))]
   [Name("VSBookmarks")]
   [Order(After = "VsTextMarker")]
-  [ContentType("code")]
+  [ContentType("any")]
   [TagType(typeof(Tag))]
   class GlyphFactoryProvider: IGlyphFactoryProvider {
 
