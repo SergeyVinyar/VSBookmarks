@@ -22,3 +22,5 @@ If some of these shortcuts are already used by any other global commands VSBookm
 1.3	Added: Visual Studio 2015 support
 
 1.4     Fixed: Exception when editing T4 Text Templates
+
+1.5     Added: Visual Studio 2017 support
