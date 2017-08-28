@@ -1,6 +1,4 @@
-﻿#VSBookmarks
-
-**VSBookmarks is a numeric bookmarks extension for Visual Studio.**
+﻿**VSBookmarks is a numeric bookmarks extension for Visual Studio.**
 
 <img style="float: left; margin-right: 20px" src="https://raw.github.com/SergeyVinyar/VSBookmarks/master/README_img/screenshot.png">
 
@@ -15,11 +13,13 @@ If some of these shortcuts are already used by any other global commands VSBookm
 * choose a command that relates to unavailable shortcut;
 * assign a shortcut.
 
+VSBookmarks can be installed via Visual Studio or downloaded at [Marketplace](https://marketplace.visualstudio.com/items?itemName=SergeyVinyarsky.VSBookmarks).
+
 **Version history**
 
-1.2	Fixed: Can't type left curly bracket using german keyboard layout
+1.2     Fixed: Can't type left curly bracket using german keyboard layout
 
-1.3	Added: Visual Studio 2015 support
+1.3     Added: Visual Studio 2015 support
 
 1.4     Fixed: Exception when editing T4 Text Templates
 
