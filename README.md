@@ -1,4 +1,4 @@
-#VSBookmarks
+﻿#VSBookmarks
 
 **VSBookmarks is a numeric bookmarks extension for Visual Studio.**
 
@@ -24,3 +24,5 @@ If some of these shortcuts are already used by any other global commands VSBookm
 1.4     Fixed: Exception when editing T4 Text Templates
 
 1.5     Added: Visual Studio 2017 support
+
+1.6     Fixed: Errors in Visual Studio 2015
