@@ -26,3 +26,5 @@ VSBookmarks can be installed via Visual Studio or downloaded at [Marketplace](ht
 1.5     Added: Visual Studio 2017 support
 
 1.6     Fixed: Errors in Visual Studio 2015
+
+1.7     Added: Visual Studio 2019 support
