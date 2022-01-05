@@ -64,7 +64,7 @@ namespace VSBookmarks {
     }
 
     public void SetBookmark(int number) {
-      TextSelection selection = _DTE2.ActiveDocument.Selection;
+      TextSelection selection = (TextSelection)_DTE2.ActiveDocument.Selection;
       int row = selection.ActivePoint.Line;
 
       var bookmark = _Bookmarks[number];
@@ -91,7 +91,7 @@ namespace VSBookmarks {
         return null;
 
       var row = _Bookmarks[number].GetRow(_Buffer);
-      TextSelection selection = _DTE2.ActiveDocument.Selection;
+      TextSelection selection = (TextSelection)_DTE2.ActiveDocument.Selection;
       int column = selection.ActivePoint.DisplayColumn;
       selection.StartOfDocument();
       selection.MoveToLineAndOffset(row, column);
